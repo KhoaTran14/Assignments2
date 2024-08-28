@@ -42,11 +42,11 @@ public class Array {
         System.out.println("Trung binh cong cua cac phan tu trong mang la: " + avg);
         // Sắp xếp mảng tăng dần
         for (int i = 0; i < n ; i++) {
-            for (int j = 0; j < n - 1 ; j++) {
-                if (a[j] > a[j + 1]) {
-                    int t = a[j];
-                    a[j] = a[j + 1];
-                    a[j + 1] = t;
+            for (int j = 0; j < n ; j++) {
+                if (a[j] > a[i]) {
+                    int t = a[i];
+                    a[i] = a[j];
+                    a[j] = t;
                 }
             }
         }
