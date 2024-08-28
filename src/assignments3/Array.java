@@ -38,12 +38,12 @@ public class Array {
         }
         System.out.println("Tong cac phan tu trong mang la: " + sum);
         //Tính Trung Bình Cộng
-        double avg = (double) sum / n ;
+        double avg = (double) sum / n;
         System.out.println("Trung binh cong cua cac phan tu trong mang la: " + avg);
         // Sắp xếp mảng tăng dần
-        for (int i = 0; i < n ; i++) {
-            for (int j = 0; j < n ; j++) {
-                if (a[j] > a[i]) {
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (a[i] > a[j]) {
                     int t = a[i];
                     a[i] = a[j];
                     a[j] = t;
